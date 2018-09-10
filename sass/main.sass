@@ -1,0 +1,554 @@
+$mainOrange: #F36F21
+$mainGray: #6D6E71
+ 
+*  
+	margin: 0
+	padding: 0
+  
+body  
+	background-color: #fff
+
+.container
+	position: relative
+	max-width: 1170px
+	margin: 0 auto
+  
+h2
+	font-family: HelveticaNeue-BoldCond
+	font-size: 41px
+	font-weight: normal
+	text-transform: uppercase
+	color: $mainOrange
+
+h3
+	font-family: HelveticaNeue-BoldCond
+	font-weight: normal
+	font-size: 34px
+	text-transform: uppercase
+	color: $mainGray
+
+button
+	outline: none
+
+button.info
+	font-family: HelveticaNeue-BoldCond
+	font-weight: normal
+	font-size: 28px
+	text-transform: uppercase
+	color: #fff
+	cursor: pointer
+	background-color: $mainGray
+	padding: 5px 22px
+	border: none
+	transition: all .15s
+
+	&:hover,
+	&:active, 
+	&:focus	
+		background-color: $mainOrange
+
+button.now
+	font-family: HelveticaNeue-BoldCond
+	font-weight: normal
+	font-size: 28px
+	text-transform: uppercase
+	color: #fff
+	cursor: pointer
+	background-color: $mainOrange
+	padding: 5px 22px
+	border: none
+	transition: all .15s
+
+	&:hover,
+	&:active,
+	&:focus	
+		background-color: $mainGray
+
+li
+	list-style-type: none
+
+p
+	font-family: HelveticaNeue-BoldCond
+	font-weight: normal
+	font-size: 15px
+	color: $mainGray
+
+a
+	text-decoration: none
+	outline: none
+
+h1
+	font-family: HelveticaNeue-BoldCond
+	font-weight: normal
+	font-size: 29px
+	text-transform: uppercase
+	color: $mainOrange
+	line-height: .8
+
+	span
+		font-family: HelveticaNeue-BoldCond
+		font-weight: normal
+		font-size: 29px
+		text-transform: uppercase
+		color: #000
+
+a.shopcart
+	font-family: HelveticaNeue-BoldCond
+	font-weight: normal
+	font-size: 21px
+	text-transform: uppercase
+	text-align: right
+	color: #B6B8BA
+	transition: color .15s
+	line-height: .9
+
+	&:hover
+		color: $mainGray
+
+a.donate
+	font-family: HelveticaNeue-BoldCond
+	font-weight: normal
+	font-size: 21px
+	color: $mainOrange
+	text-transform: uppercase
+	transition: color .15s
+
+	&:hover
+		color: $mainGray
+
+.social-search
+	display: flex
+	justify-content: space-between
+	align-items: center
+	margin: 11px 0
+
+	a.social
+		margin: 0 3px 
+		transition: all .15s
+	
+		&:hover
+			.cls-1,
+			.cls-2,
+			.cls-3,
+			.cls-4
+				transition: all .15s
+				fill: $mainGray
+		
+	form.search-form
+		display: block
+		position: relative
+
+		button.search-btn
+			margin-left: 6px
+			outline: none
+			cursor: pointer
+			background-color: transparent
+			border: none
+
+		input.search-input
+			display: none 
+			position: absolute
+			top: -3px
+			left: -193px
+			color: $mainGray
+			border-style: none
+			border: 1px solid #b6b8ba
+			padding: 5px 10px 
+
+
+
+header
+	padding-top: 40px
+
+	.top-header
+		display: flex
+		align-items: flex-start
+		justify-content: space-between
+
+		.header-social-block
+			display: flex
+			flex-direction: column
+			align-items: flex-end
+			justify-content: space-between
+
+		.wrp 
+			.season-17 
+				margin-right: 20px 
+
+nav
+	display: flex
+	justify-content: center
+	align-items: center
+	margin:
+		top: 60px
+		bottom: 22px
+
+	ul.menu
+		display: flex
+		align-items: center
+
+		li
+			margin: 0 21px
+
+			a.nav-link
+				font-family: HelveticaNeue-BoldCond
+				font-weight: normal
+				font-size: 21px
+				text-align: center
+				text-transform: uppercase
+				color: $mainGray
+				cursor: pointer
+				transition: color .15s
+
+				&:hover
+					color: $mainOrange
+
+			a.active
+				color: $mainOrange
+
+main
+
+	section.main-slider
+
+		.slick-prev, 
+		.slick-next
+			top: 90%
+
+		.slick-prev
+			left: 10% !important
+			z-index: 1 
+			width: 52px
+			height: 46px
+
+			&:hover
+				.cls-11
+					transition: all .2s
+					fill: $mainGray
+						
+			&:before
+				display: none
+
+		.slick-next
+			right: 10% !important
+			z-index: 1 
+			width: 52px
+			height: 46px
+
+			&:hover
+				.cls-11 
+					transition: all .2s
+					fill: $mainGray
+						
+			&:before
+				display: none
+
+		.slide-block
+			background-image: url('../img/slider-bg.png')
+			background-repeat: no-repeat
+			background-position: center center
+			background-size: contain
+			min-height: 506px
+			
+			.container	
+				display: flex
+				justify-content: flex-end
+
+				.cont-slide
+					width: 30%
+					background-color: rgba(0,0,0, .7)
+					padding: 28px 0 22px 33px
+					margin:
+						top: 50px
+						right: 105px
+
+					h2.h2
+						font-family: HelveticaNeue-BoldCond
+						font-weight: normal
+						font-size: 32px
+						text-transform: uppercase
+						color: #fff
+						line-height: 1
+						padding-bottom: 40px 
+
+					p.p
+						font-family: HelveticaNeue-BoldCond
+						font-weight: normal
+						font-size: 22px
+						color: #fff
+						padding-bottom: 55px
+
+	section.whats-on
+		margin-top: 85px
+
+		.cont-whats-on
+			display: flex
+			justify-content: flex-start
+			margin: 75px 0
+
+			img
+				margin-right: 45px
+
+			.cont-whats
+				display: flex
+				flex-direction: column
+				justify-content: space-between
+
+				p
+					width: 50%
+					line-height: 1.5
+
+				.btns-block
+					button.info 
+						margin-right: 15px 
+
+	section.sing
+		margin-top: 80px
+		
+		.cont-sing-with-us
+			display: flex
+			justify-content: flex-start
+			margin: 40px 0
+
+			img
+				margin-right: 45px
+
+			.cont-sing
+				display: flex
+				flex-direction: column
+				justify-content: space-between
+
+				p
+					width: 50%
+					line-height: 1.5
+
+				.btns-block
+					button.info 
+						margin-right: 15px
+
+
+	section.video
+		margin-top: 100px
+
+		.wrapper
+			max-width: 1166px
+			width: 100%
+			position: relative
+			margin-top: 40px
+			padding-bottom: 56.25%
+			padding-top: 25px
+			height: 0
+
+			iframe
+				position: absolute
+				top: 0
+				left: 0
+				width: 100%
+				height: 100%
+
+	section.shop-support
+		margin-top: 115px
+
+		.container
+			display: flex
+
+			.shop-block
+				display: flex
+				flex-direction: column
+				align-items: flex-start
+				margin-right: 20px
+
+				img
+					margin-top: 40px
+					width: 100%
+
+			.supp-block
+				display: flex
+				flex-direction: column
+				align-items: flex-start
+
+				.wrapp 
+					display: flex
+					justify-content: space-between
+
+					img
+						margin-top: 40px
+
+					img:first-child
+						margin-right: 20px
+
+	section.subscribe
+		margin-top: 160px
+
+		.container
+			display: flex
+			flex-direction: column
+			align-items: center
+
+			.btns-sub-block
+				display: flex
+				justify-content: center
+				margin-top: 35px
+
+				button.mail,
+				button.signup
+					background-color: transparent
+					border: 1px solid #B6B8BA 
+					padding: 10px 45px
+					font-family: HelveticaNeue-BoldCond
+					font-weight: normal
+					font-size: 18px
+					text-align: center
+					text-transform: uppercase
+					cursor: pointer
+					transition: color .15s
+
+				button.mail
+					color: #B6B8BA
+					margin-right: 5px
+
+					&:hover
+						color: $mainOrange
+
+				button.signup
+					color: $mainOrange
+					margin-left: 5px
+
+					&:hover
+						color: #B6B8BA
+
+	section.our-inst
+		display: flex
+		flex-direction: column
+		align-items: center
+		margin-top: 60px
+		margin-bottom: 100px
+
+		a
+			margin-top: 40px
+
+			img
+				width: 100%
+
+		.bottom-social
+			margin-top: 50px
+
+			a.social
+						margin: 0 10px 
+						transition: all .15s
+		
+						&:hover
+							.cls-1,
+							.cls-2,
+							.cls-3,
+							.cls-4
+								transition: all .15s
+								fill: $mainGray
+
+footer
+	background-color: #565659
+	padding-top: 65px
+	padding-bottom: 30px
+
+	section.parnters
+		display: flex
+		flex-direction: column
+		align-items: center
+
+		ul.partners-list
+			width: 100%
+			display: flex
+			justify-content: space-around
+			align-items: center
+			margin-top: 75px
+
+			li
+				a
+					display: flex
+					justify-content: center
+					align-items: center
+					img
+						width: 65%
+
+	section.contact-info
+		margin-top: 145px
+
+		.container
+			display: flex
+			flex-direction: column
+			align-items: center
+
+			a.arrow-up
+				background-color: transparent
+				border: none
+				cursor: pointer
+				transition: color .15s
+
+				&:hover
+
+					.cls-12
+						fill: #DADBDC
+
+			h3.h3
+				font-family: HelveticaNeue-BoldCond
+				font-weight: normal
+				font-size: 23px
+				text-align: center
+				text-transform: uppercase
+				color: #fff
+				margin-top: 55px
+
+
+			address,
+			a.tel,
+			a.mailto
+				font-family: HelveticaNeue-Condensed
+				font-weight: normal
+				font-style: normal
+				font-size: 23px
+				color: #fff
+				margin-top: 10px
+
+			a.design,
+			p
+				font-family: HelveticaNeue-Condensed
+				font-weight: normal
+				font-size: 16px
+				color: #fff
+
+			p
+				line-height: 1.5
+
+				span
+					font-family: HelveticaNeue-BoldCond
+					font-weight: normal
+					font-size: 16px
+					color: #fff
+					text-transform: uppercase
+
+			a.tel,
+			a.mailto,
+			a.design
+				transition: color .15s
+
+				&:hover
+					color: #DADBDC
+
+			a.footer-links
+				font-family: HelveticaNeue-BoldCond
+				font-weight: normal
+				font-size: 23px
+				color: #fff
+				margin-top: 5px
+				transition: color .15s
+
+				&:hover
+					color: #DADBDC
+
+			.social-search
+				margin-top: 45px
+				margin-bottom: 80px
+
+				input.search-input
+					top: 0
+
+@import media      

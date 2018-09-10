@@ -1,0 +1,44 @@
+/*
+Error: The line was indented 3 levels deeper than the previous line.
+        on line 428 of E:/Work/Costum4web/Markup/sass/main.sass
+
+423: 
+424: 		.bottom-social
+425: 			margin-top: 50px
+426: 
+427: 			a.social
+428: 						margin: 0 10px 
+429: 						transition: all .15s
+430: 		
+431: 						&:hover
+432: 							.cls-1,
+433: 							.cls-2,
+
+Backtrace:
+E:/Work/Costum4web/Markup/sass/main.sass:428
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.25/lib/sass/engine.rb:523:in `tree'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.25/lib/sass/engine.rb:527:in `tree'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.25/lib/sass/engine.rb:527:in `tree'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.25/lib/sass/engine.rb:527:in `tree'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.25/lib/sass/engine.rb:412:in `_to_tree'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.25/lib/sass/engine.rb:284:in `render'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:494:in `update_stylesheet'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:209:in `each'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+C:/Program Files (x86)/Koala/rubygems/gems/compass-1.0.3/lib/compass/sass_compiler.rb:40:in `compile!'
+C:/Program Files (x86)/Koala/rubygems/gems/compass-1.0.3/lib/compass/commands/update_project.rb:49:in `perform'
+C:/Program Files (x86)/Koala/rubygems/gems/compass-1.0.3/lib/compass/commands/base.rb:18:in `execute'
+C:/Program Files (x86)/Koala/rubygems/gems/compass-1.0.3/lib/compass/commands/project_base.rb:19:in `execute'
+C:/Program Files (x86)/Koala/rubygems/gems/compass-1.0.3/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
+C:/Program Files (x86)/Koala/rubygems/gems/compass-1.0.3/lib/compass/exec/sub_command_ui.rb:15:in `run!'
+C:/Program Files (x86)/Koala/rubygems/gems/compass-1.0.3/bin/compass:30:in `block in <top (required)>'
+C:/Program Files (x86)/Koala/rubygems/gems/compass-1.0.3/bin/compass:44:in `call'
+C:/Program Files (x86)/Koala/rubygems/gems/compass-1.0.3/bin/compass:44:in `<top (required)>'
+C:/Program Files (x86)/Koala/bin/compass:22:in `load'
+C:/Program Files (x86)/Koala/bin/compass:22:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: The line was indented 3 levels deeper than the previous line.\A         on line 428 of E:/Work/Costum4web/Markup/sass/main.sass\A \A 423: \A 424: 		.bottom-social\A 425: 			margin-top: 50px\A 426: \A 427: 			a.social\A 428: 						margin: 0 10px \A 429: 						transition: all .15s\A 430: 		\A 431: 						&:hover\A 432: 							.cls-1,\A 433: 							.cls-2,"; }

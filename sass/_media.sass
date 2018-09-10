@@ -1,0 +1,382 @@
+@media (min-width: 1600px)
+	main section.main-slider .slick-prev
+		left: 15%
+	main section.main-slider .slick-next  
+		right: 15%  
+
+@media (max-width: 1280px)
+	.container	
+		padding: 0 5%
+
+@media (max-width: 1270px)
+	section.shop-support
+		.container
+			flex-direction: column
+			align-items: center
+
+	main section.shop-support .container .supp-block,
+	main section.shop-support .container .shop-block
+		align-items: center
+
+	main section.shop-support .container .supp-block
+		margin-top: 40px
+
+		img
+			width: 100%
+
+	main section.main-slider .slide-block
+		background-size: cover
+
+	button.info,
+	button.now
+		font-size: 20px
+
+@media (min-width: 1024px)
+	section.our-inst
+		a
+			img
+				width: 100%
+
+@media (max-width: 1024px)
+
+	header
+		padding-bottom: 50px
+
+	header .top-header a.logo 
+		width: 13%
+
+	header .top-header a.logo img 
+		width: 100%  
+
+	.season 
+		width: 35% 
+
+	h1
+		font-size: 16px
+		line-height: .9
+
+		span
+			font-size: 16px
+
+	nav ul.menu
+		align-items: flex-end
+
+		li
+			a.nav-link
+				font-size: 30px
+
+
+
+	main section.main-slider .slide-block .container .cont-slide 
+		h2.h2
+			font-size: 22px
+		p.p
+			font-size: 16px
+
+	main section.whats-on .cont-whats-on
+		flex-direction: column
+		align-items: center
+
+		img
+			margin-right: 0
+			width: 100%
+
+		.cont-whats
+			align-items: center
+
+			h3,
+			p
+				text-align: center
+				margin: 20px 0
+
+	main section.sing .cont-sing-with-us img
+		width: 100%	
+
+	main section.sing
+		.container	
+			.cont-sing-with-us
+				flex-direction: column
+				align-items: center
+
+				.cont-sing
+					flex-direction: column
+					align-items: center
+
+					h3,
+					p
+						text-align: center
+						margin: 20px 0
+	
+	main section.shop-support .container .supp-block .wrapp
+		flex-direction: column
+		align-items: center
+
+	.navBurger
+		position: fixed
+		right: 1%
+		top: 40px
+		cursor: pointer
+		background: $mainGray
+		box-sizing: border-box
+		background-clip: content-box
+		width: 30px
+		height: 24px
+		border-top: 11px solid transparent
+		border-bottom: 11px solid transparent
+		-webkit-transform: rotate(0deg)
+		transform: rotate(0deg)
+		-webkit-transition: all 0.25s ease-in-out
+		transition: all 0.25s ease-in-out
+		z-index: 1000
+
+		&:before, &:after
+			content: ""
+			position: absolute
+			background: $mainGray
+			height: 2px
+			width: 100%
+			right: 0
+			will-change: rotate
+			-webkit-transform: rotate(0deg)
+			transform: rotate(0deg)
+			-webkit-transition: all 0.5s ease
+			transition: all 0.5s ease
+
+		&:before
+			top: -10px
+		&:after
+			bottom: -10px
+			width: 90%
+
+		&.active
+			background: transparent
+			background-clip: content-box
+
+			&:before
+				-webkit-transform: rotate(135deg)
+				transform: rotate(135deg)
+				top: 0
+				background: $mainGray
+				width: 110%
+
+			&:after
+				bottom: 0
+				-webkit-transform: rotate(-135deg)
+				transform: rotate(-135deg)
+				background: $mainGray
+				width: 110%
+
+	.overlay 
+		position: fixed !important
+		background: rgba(182,184,186, .8)
+		top: 0
+		right: 0
+		width: 100% !important
+		height: 100vh
+		opacity: 0
+		transform: scale(0)
+		visibility: hidden
+		transition: all 0.4s ease-in-out
+		overflow: hidden
+		z-index: 100
+
+		&.open
+			opacity: 0.99
+			visibility: visible
+			transform: scale(1)
+
+			li 
+				display: block
+				animation: fadeInRight 0.4s cubic-bezier(0.42, 0.83, 0.7, 1.5) forwards
+				animation-delay: 0.4s
+				transform: rotate(-7deg)
+				transform-origin: right bottom
+
+				&:nth-of-type(2)
+					animation-delay: 0.5s
+
+				&:nth-of-type(3)
+					animation-delay: 0.6s
+
+				&:nth-of-type(4) 
+					animation-delay: 0.7s
+
+				&:nth-of-type(5) 
+					animation-delay: 0.8s
+
+
+	.overlayMenu 
+		display: none
+		position: absolute
+		display: flex
+		justify-content: flex-end
+		text-align: right
+		width: 100%
+		height: 100vh
+		right: 10vw
+		bottom: 10vw
+
+		ul 
+			flex-direction: column
+			list-style: none
+			padding: 0
+			margin: 0 0
+			display: block
+			position: relative
+			height: 100vh
+			margin-top: 70vh
+
+			li 
+				display: block
+				position: relative
+				opacity: 0
+				width: 100%
+
+				a
+					display: inline-block
+					color: $mainOrange
+					text-decoration: none
+					font-size: 30px
+					padding: 10px 10px 10px 40px
+					margin: 5px 0
+					transition: 0.2s
+
+					&:hover,
+					&:active,
+					&:focus
+						transform: translateX(-2px)
+						// padding-left: 80px
+						outline: none
+						background: rgba(109,110,113, .6)
+
+
+	.locked 
+		overflow: hidden
+
+
+	@keyframes fadeInRight 
+		0%  
+			opacity: 0
+			left: 50px
+
+		100% 
+			opacity: 1
+			left: 0
+			transform: rotate(0deg)
+
+@media (max-width: 768px)
+
+	header .top-header
+		a.logo 
+			width: 16%
+
+		.wrp
+			margin-left: 20px
+
+
+	.navBurger
+		width: 22px
+
+		&:before
+			top: -7px
+
+		&:after
+			bottom: -7px
+
+	main section.main-slider .slide-block .container .cont-slide
+	
+		h2.h2
+			padding-bottom: 22px
+
+		p.p
+			padding-bottom: 30px
+			font-size: 15px
+	
+@media (max-width: 720px)
+
+	header .top-header
+		flex-direction: column
+		align-items: center
+
+		a.logo
+			align-self: flex-start
+			margin-bottom: 20px
+
+		.wrp
+			align-self: flex-start
+			margin-bottom: 20px
+
+		h1
+			align-self: flex-end
+			margin-bottom: 20px
+			font-size: 30px
+
+			span
+				font-size: 30px
+
+		.header-social-block
+			align-self: flex-end
+
+			a.social 
+
+				svg
+					width: 23px
+					height: 23px
+
+	main section.main-slider .slide-block .container .cont-slide
+		width: 50%
+		margin-left: auto
+		margin-right: auto
+
+	footer section.contact-info .container p
+		text-align: center
+
+@media (max-width: 425px)
+
+	header .top-header a.logo
+		width: 25%
+
+@media (max-width: 375px)
+
+	header .top-header a.logo
+		width: 40%
+
+	.season
+		width: 40%
+
+	header .top-header 
+		h1
+			font-size: 20px
+
+			span
+				font-size: 20px
+
+	main section.main-slider .slide-block .container .cont-slide
+		width: 90%
+
+	button.info, button.now
+		font-size: 15px
+
+	main section.whats-on .cont-whats-on .cont-whats p
+		width: 90%
+
+	main section.sing .cont-sing-with-us img
+		margin-right: 0
+
+	main section.subscribe .container .btns-sub-block button.mail, 
+	main section.subscribe .container .btns-sub-block button.signup
+		font-size: 12px
+
+	footer section.contact-info .container address, 
+	footer section.contact-info .container a.tel, 
+	footer section.contact-info .container a.mailto
+		font-size: 16px
+
+	footer section.contact-info .container a.footer-links
+		font-size: 16px
+
+	.navBurger
+		right: 5%
+
+	main section.shop-support .container .supp-block .wrapp img
+		margin-right: 0 !important
